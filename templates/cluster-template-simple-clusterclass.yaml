@@ -172,10 +172,6 @@ spec:
   template:
     spec:
       kubeadmConfigSpec:
-        clusterConfiguration:
-          controllerManager:
-            extraArgs:
-              cloud-provider: aws
         initConfiguration:
           nodeRegistration:
             name: '{{ ds.meta_data.local_hostname }}'

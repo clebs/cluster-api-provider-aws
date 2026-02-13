@@ -35,7 +35,6 @@ spec:
     clusterConfiguration:
       controllerManager:
         extraArgs:
-          cloud-provider: aws
           feature-gates: CSIMigrationAWS=false
     initConfiguration:
       nodeRegistration:

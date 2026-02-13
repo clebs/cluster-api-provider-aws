@@ -36,10 +36,6 @@ metadata:
   name: "${CLUSTER_NAME}-control-plane"
 spec:
   kubeadmConfigSpec:
-    clusterConfiguration:
-      controllerManager:
-        extraArgs:
-          cloud-provider: external
     initConfiguration:
       nodeRegistration:
         kubeletExtraArgs:

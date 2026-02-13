@@ -44,10 +44,6 @@ spec:
         name: '{{ ds.meta_data.local_hostname }}'
         kubeletExtraArgs:
           cloud-provider: aws
-    clusterConfiguration:
-      controllerManager:
-        extraArgs:
-          cloud-provider: aws
     joinConfiguration:
       nodeRegistration:
         name: '{{ ds.meta_data.local_hostname }}'

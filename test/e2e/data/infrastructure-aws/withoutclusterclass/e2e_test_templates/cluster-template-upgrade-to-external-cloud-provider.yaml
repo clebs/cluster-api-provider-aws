@@ -37,7 +37,6 @@ spec:
     clusterConfiguration:
       controllerManager:
         extraArgs:
-          cloud-provider: external
           external-cloud-volume-plugin: aws
     initConfiguration:
       nodeRegistration:
